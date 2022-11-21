@@ -1,0 +1,25 @@
+/* base Css script */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+    line-height: 1;
+  }
+  
+
+
+
+
+
+
+.sBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.sBtn i:hover {
+  font-size: 20px;
+  background-color: #61ffa5;
+}
