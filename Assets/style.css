@@ -12,11 +12,11 @@ body {
 
 
 .sBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: #06aed5;
+
+
+  background-color: rgb(87, 76, 185);
   color: white;
+  align-content: left;
 }
 
 .sBtn i:hover {
