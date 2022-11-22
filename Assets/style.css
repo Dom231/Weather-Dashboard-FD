@@ -19,9 +19,11 @@ body {
     border-top: 1px solid white;
   }
 .fiveForcast{
-  background-color:rgb(61, 5, 217);
+  background-color:rgba(13, 16, 86, 0.789);
   border-style:solid;
-  color:black;
+  color:rgb(255, 255, 255);
+  text-align: left;
+   /* padding: 1em;  */
 }
 /* .current{
   border-style: solid;
@@ -33,6 +35,11 @@ body {
   background-color: rgb(87, 76, 185);
   color: white;
   align-content: left;
+  padding: 6px 5px;
+  width: 75%;
+  display: block;
+  margin: 5px 0;
+  border-radius: var(--border-radius);
 }
 
 .sBtn i:hover {

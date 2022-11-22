@@ -69,7 +69,7 @@ fetch(requestUrl)
 
     var cityTempLi = document.createElement('ul')
     cityTemp = 1.8*(cityTemp - 273.15)+32;
-    cityTempLi.textContent = Math.round(cityTemp)+'\u00b0'+"F";
+    cityTempLi.textContent ="Temp: "+ Math.round(cityTemp)+'\u00b0'+"F";
     currentEl.append(cityTempLi);
 
  
@@ -77,17 +77,21 @@ fetch(requestUrl)
     console.log(cityHum);
 
     var cityHumLi = document.createElement('ul')
-    cityHumLi.textContent = cityHum+"%";
+    cityHumLi.textContent = "Humidity: "+cityHum+"%";
     currentEl.append(cityHumLi);
 
     var cityWind = data.list[0].wind.speed;
     console.log(cityWind)
 
     var cityWindLi = document.createElement('ul')
-    cityWindLi.textContent = cityWind +"mph";
+    cityWindLi.textContent ="Wind: "+ cityWind +"mph";
     currentEl.append(cityWindLi);
 
     forcastEl.textContent=" ";
+    var cfiveDayEl = document.getElementById("Cfive-day");
+    var cfivedayH=document.createElement('h3');
+    cfivedayH.textContent ="5-Day Forecast:";
+    forcastEl.append(cfivedayH);
 
     for(var i=7;i < data.list.length; i+=8){
         console.log(data.list[i]);
@@ -95,7 +99,8 @@ fetch(requestUrl)
 
     
 forcastId=document.createElement("container");
-forcastId.setAttribute("class","fiveForcast")
+//forcastId.setAttribute("class","col-2 d-inline-block");
+forcastId.setAttribute("class","fiveForcast col-2 d-inline-block ");
 forcastEl.append(forcastId);
     //This is the start of the code to get the current weather for the current day
     var timeC = data.list[i].dt_txt
@@ -122,7 +127,7 @@ forcastEl.append(forcastId);
 
     var cityTempLi = document.createElement('ul')
     cityTemp = 1.8*(cityTemp - 273.15)+32;
-    cityTempLi.textContent = Math.round(cityTemp)+'\u00b0'+"F";
+    cityTempLi.textContent = "Temp: "+Math.round(cityTemp)+'\u00b0'+"F";
     forcastId.append(cityTempLi);
 
  
@@ -130,14 +135,14 @@ forcastEl.append(forcastId);
     console.log(cityHum);
 
     var cityHumLi = document.createElement('ul')
-    cityHumLi.textContent = cityHum+"%";
+    cityHumLi.textContent ="Humidity: "+ cityHum+"%";
     forcastId.append(cityHumLi);
 
     var cityWind = data.list[0].wind.speed;
     console.log(cityWind)
 
     var cityWindLi = document.createElement('ul')
-    cityWindLi.textContent = cityWind +"mph";
+    cityWindLi.textContent = "Wind: "+ cityWind +"mph";
     forcastId.append(cityWindLi);
     }
 });
