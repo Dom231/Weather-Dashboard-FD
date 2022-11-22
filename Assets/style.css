@@ -18,8 +18,14 @@ body {
     height: 80px;
     border-top: 1px solid white;
   }
-
-
+.fiveForcast{
+  background-color:rgb(61, 5, 217);
+  border-style:solid;
+  color:black;
+}
+/* .current{
+  border-style: solid;
+} */
 
 .sBtn {
 
