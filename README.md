@@ -1,6 +1,9 @@
 # Weather-Dashboard-FD
 This application will give you the current weather and will display a five day forcast 
 
+##note
+The click on search is a little weird on github. you have to find the right spot to click. if it shows the finger, you can click. 
+
 
 
 ##Acceptance criteria:
