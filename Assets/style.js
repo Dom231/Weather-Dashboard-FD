@@ -5,6 +5,7 @@ var cityInputEl = document.querySelector('#city');
 var currentEl = document.getElementById("current-day");
 var forcastEl = document.getElementById("five-day");
 
+var cityArray=[];
 
 var cityname = " ";
 var current = moment()
@@ -13,11 +14,17 @@ eCurrentDay = current.format('L');
 var timeLi = document.createElement('ul')
 timeLi.textContent = eCurrentDay;
 
+
 $(".sBtn").on("click",function(){
     cityname = $("#city").val();
-    var cityLi = document.createElement('li')
+    var cityLi = document.createElement('button');
+    cityLi.setAttribute("class","sBtn");
     cityLi.textContent = cityname;
     currentEl.textContent =" ";
+cityArray.push(cityname);
+console.log(cityArray);
+localStorage.setItem("names",cityArray);
+
 
    
 
@@ -88,7 +95,7 @@ fetch(requestUrl)
     currentEl.append(cityWindLi);
 
     forcastEl.textContent=" ";
-    var cfiveDayEl = document.getElementById("Cfive-day");
+    
     var cfivedayH=document.createElement('h3');
     cfivedayH.textContent ="5-Day Forecast:";
     forcastEl.append(cfivedayH);
@@ -149,7 +156,8 @@ forcastEl.append(forcastId);
         
     });
        
-
+$(cityArray).val(localStorage.getItem("names"));
+console.log(cityArray);
 
 
  
