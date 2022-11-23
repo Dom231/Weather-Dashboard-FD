@@ -1,6 +1,8 @@
 # Weather-Dashboard-FD
 This application will give you the current weather and will display a five day forcast 
 
+
+
 ##Acceptance criteria:
 1. I will be able to type in a city and be shown the weather for that city on the current day 
 2. I will be able to see the weather conditions for the next fice days 
@@ -19,4 +21,10 @@ This application will give you the current weather and will display a five day f
 i have the data for the city saved into the local storage, but do not know how to call it back out and assign
 it to the button with the corespoding city name
 
-##pictures 
+##picture 
+
+![weather2](https://user-images.githubusercontent.com/114959233/203464653-e9a99e3c-d858-4ec7-80f8-5a162a125c1e.png)
+
+##Git.page link
+https://dom231.github.io/Weather-Dashboard-FD/
+
